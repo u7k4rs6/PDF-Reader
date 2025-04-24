@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted PDF Text</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Extracted Text from PDF</h1>
+    <div class="content">
+        <h2>Extracted Text:</h2>
+        <pre>{{ extracted_text }}</pre>
+    </div>
+    <br>
+    <a href="/">Go Back to Upload Page</a>
+</body>
+</html>

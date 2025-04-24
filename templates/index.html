@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Extractor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>PDF Information Extractor</h1>
+  <form id="pdfForm" enctype="multipart/form-data" method="POST" action="/process_pdf">
+    <label for="pdfFile">Upload PDF:</label>
+    <input type="file" id="pdfFile" name="pdfFile" required><br><br>
+    <button type="submit">Upload and Process</button>
+  </form>
+  <div id="output"></div>
+</body>
+</html>
