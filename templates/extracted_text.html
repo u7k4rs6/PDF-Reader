@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extracted PDF Text</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Extracted Text from PDF</h1>
-    <div class="content">
-        <h2>Extracted Text:</h2>
-        <pre>{{ extracted_text }}</pre>
+    <div class="container">
+        <h1>Extracted Text from PDF</h1>
+        <div class="content">
+            <pre>{{ extracted_text }}</pre>
+        </div>
+        <a href="/" class="back-link">← Back to Upload Page</a>
     </div>
-    <br>
-    <a href="/">Go Back to Upload Page</a>
 </body>
 </html>

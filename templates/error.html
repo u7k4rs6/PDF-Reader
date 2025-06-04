@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='stylesec.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Error</h1>
-    <div class="content">
-        <p>{{ message }}</p>
+    <div class="container">
+        <h1>Error</h1>
+        <div class="error-container">
+            <p>{{ message }}</p>
+        </div>
+        <a href="/" class="back-link">← Back to Upload Page</a>
     </div>
-    <br>
-    <a href="/">Go Back to Upload Page</a>
 </body>
 </html>
